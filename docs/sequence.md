@@ -1,11 +1,11 @@
-﻿# Sequence
+# Illustrative retrieval and generation flow
 
-1. User message enters support queue.
-2. Orchestrator starts workflow.
-3. Classifier detects category and urgency.
-4. Retrieval pulls nearest knowledge chunks.
-5. LLM returns candidate response.
-6. Policy checks evaluate confidence/risk.
-7. If approved, response is sent automatically.
-8. If not approved, ticket is escalated to human support.
-9. Metrics and traces are persisted.
+The sequence below is an educational abstraction. It does not describe an organization's support process or internal policies.
+
+1. Receive a question.
+2. Retrieve potentially relevant context from an example knowledge collection.
+3. Provide the context to a generation step.
+4. Review the output for the intended use.
+5. Assess whether the interaction helped the user.
+
+No operational automation policy, threshold, routing rule, private event contract or source material is disclosed.

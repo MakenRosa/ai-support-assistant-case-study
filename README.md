@@ -1,42 +1,32 @@
-﻿# AI Support Assistant - Case Study
+# Aplicações de IA para apoio ao atendimento
 
-## Overview
-This repository documents the architecture and delivery decisions behind an AI-powered Level 1 support assistant.
+Relato da minha participação, em equipe, na evolução de uma solução com IA, apresentado em termos gerais para portfólio. O trabalho partiu de uma base existente e envolveu desenvolvimento e integração.
 
-## Context
-The assistant was designed to reduce repetitive support load by automatically resolving common tickets before human escalation.
+## Minha contribuição no time
 
-## Business outcomes
-- Up to **50%** of incoming support tickets resolved before human handoff
-- Monthly inference cost maintained under **US$15**
-- Better response consistency and faster first response time
+- Desenvolvimento de integrações de inferência em Python.
+- Adaptação de integrações com APIs de modelos de linguagem.
+- Preparação e tratamento de conteúdo para recuperação de informação com RAG.
+- Integração de funcionalidades ao fluxo de uso existente.
+- Desenvolvimento de recursos para acompanhar o uso da solução.
 
-## Architecture (high level)
-1. Ingestion of support messages/events
-2. Classification and routing
-3. Retrieval step (RAG) for contextual grounding
-4. LLM response generation
-5. Confidence/rules gate before automated reply
-6. Telemetry for cost, latency, and resolution metrics
+O relato reconhece a participação do time e a existência de uma base anterior. Não atribui a mim a criação individual de toda a solução.
 
-See `docs/architecture.md` and `docs/sequence.md`.
+## Conhecimentos demonstrados
 
-## Tech used
-- AWS Bedrock
-- Pinecone (RAG)
-- AWS Lambda
-- AWS Step Functions
-- AWS SAM
-- Jenkins
+Integração de APIs, desenvolvimento em Python, preparação de conteúdo, recuperação de informação, colaboração e acompanhamento do funcionamento de uma aplicação de IA.
 
-## Non-goals
-- No proprietary code
-- No customer data
-- No internal model prompts or private infra details
+As notas abaixo discutem conceitos comuns. Não descrevem fornecedores, fontes de dados, políticas ou arquitetura de uma operação real:
 
-## Security
-See `SECURITY.md`.
+- [Conceitos de recuperação e geração](docs/architecture.md)
+- [Fluxo ilustrativo](docs/sequence.md)
+- [Discussão sobre revisão humana](adr/0001-automation-threshold.md)
+- [Discussão sobre RAG e atualização de conteúdo](adr/0002-rag-over-fine-tuning.md)
 
-## ADRs
-- `adr/0001-automation-threshold.md`
-- `adr/0002-rag-over-fine-tuning.md`
+## English summary
+
+This portfolio account describes my team contribution to the evolution of an existing AI solution: Python inference integrations, model API integration, content preparation for RAG, integration into an existing user flow, and usage-follow-up features. It credits the team and the pre-existing foundation. Supporting notes cover general concepts and do not describe a company's operational implementation.
+
+## Escopo público
+
+Este repositório contém somente texto descritivo e notas conceituais. Não publica métricas, custos, fornecedores, parceiros, plataformas internas, origem dos documentos, dados de clientes, prompts, políticas ou código empresarial. Consulte [SECURITY.md](SECURITY.md).
